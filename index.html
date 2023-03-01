@@ -1,43 +1,70 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- add google font weight 300 400 and 700 -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- add google font weight 300 400 and 700 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- Add css file -->
-<link rel="stylesheet" href="/dist/style.css">
-  
-  <title>Frontend Mentor | Easybank landing page</title>
+    <!-- Add css file -->
+    <link rel="stylesheet" href="/dist/style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <header class="header">
-    <nav class="flex flex-jc-sb">
-    <a href="/" class="header__logo">
-      <img src="images/logo.svg" alt="Easybank">
-    </a>
-    
-    <a href="#"  class="header__menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </a>
-  </nav>
-  </header>
+    <title>Frontend Mentor | Easybank landing page</title>
 
-<!--  
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="flex flex-jc-sb flex-ai-c">
+        <a href="/" class="header__logo">
+          <img src="images/logo.svg" alt="Easybank" />
+        </a>
+
+        <a href="#" class="header__menu hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <!-- desktop nav -->
+        <div class="header__links hide-for-mobile">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">contact</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
+
+        <a href="#" class="button header__cta hide-for-mobile"
+          >Request Invite</a
+        >
+      </nav>
+    </header>
+
+    <!--  
   Home
   About
   Contact
@@ -120,7 +147,7 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
  -->
-  <!-- Add javascript file -->
-  <script src="/app/js/script.js"></script>
-</body>
+    <!-- Add javascript file -->
+    <script src="/app/js/script.js"></script>
+  </body>
 </html>
