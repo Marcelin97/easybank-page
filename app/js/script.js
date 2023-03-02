@@ -1,1 +1,10 @@
-console.log("Hello world !");
+// Mobile Menu ==> BTN Hamburger
+const btnHambuger = document.querySelector("#btnHamburger");
+
+btnHamburger.addEventListener("click", function () {
+  if (btnHamburger.classList.contains("open")) {
+    btnHamburger.classList.remove("open");
+  } else {
+    btnHamburger.classList.add("open");
+  }
+});
