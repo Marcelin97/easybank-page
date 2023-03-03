@@ -4,7 +4,6 @@
 &.open{
     .overlay{
         display: block;
-        animation: fade-in 300ms ease-in-out forwards;
     }
 
     .header__menu{
@@ -22,7 +21,6 @@
 
 // Overlay
 .overlay{
-    display: none;
     opacity: 0;
     // position to cover all the site
     position: fixed;
