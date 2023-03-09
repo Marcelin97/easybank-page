@@ -1,3 +1,7 @@
+.has-fade {
+  visibility: hidden;
+}
+
 @keyframes fade-in {
   from {
     visibility: hidden;
@@ -53,6 +57,9 @@ body {
   font-size: 1.125rem;
   color: hsl(233, 8%, 62%);
   font-weight: 300;
+}
+body.noscroll {
+  overflow: hidden;
 }
 
 a,

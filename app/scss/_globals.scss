@@ -17,6 +17,10 @@ body {
   font-size: $font-med; //18px
   color: $grayishBlue;
   font-weight: 300;
+
+  &.noscroll{
+    overflow: hidden;
+  }
 }
 
 a,
