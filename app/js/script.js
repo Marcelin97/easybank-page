@@ -27,6 +27,5 @@ btnHamburger.addEventListener("click", function () {
         element.classList.add('fade-in')
         element.classList.remove('fade-out')
     })
-
   }
 });
