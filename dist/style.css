@@ -171,6 +171,7 @@ a:hover {
 
 button,
 .button {
+  position: relative;
   display: inline-block;
   padding: 0.875rem 2.1875rem;
   border-radius: 50px;
@@ -183,8 +184,20 @@ button,
   transition: opacity 300ms ease-in-out;
   overflow: hidden;
 }
-button:hover,
-.button:hover {
+button::before,
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+button:hover::before,
+.button:hover::before {
   opacity: 1;
 }
 
