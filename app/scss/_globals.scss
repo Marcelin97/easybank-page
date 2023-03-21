@@ -144,8 +144,9 @@ button,
   transition: opacity 300ms ease-in-out;
   overflow: hidden;
 
-  &::before{
-    content:"";
+  // Create a overlay to the BTN
+  &::before {
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -155,6 +156,8 @@ button,
     opacity: 0;
     transition: opacity 150ms ease-in-out;
   }
+
+  // Change the overlay on hover
   &:hover::before {
     opacity: 1;
   }
