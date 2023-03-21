@@ -1,35 +1,51 @@
-.footer{
-    background-color: $darkBlue;
+.footer {
+  background-color: $darkBlue;
+  color: $white;
+  padding: 2.5rem;
+  text-align: center;
+
+  a {
     color: $white;
-    
-    &__logo{
+  }
 
+  &__logo {
+    display: inline-block;
+    margin-bottom: 1.875rem;
+  }
+
+  &__social {
+    margin-bottom: 1.875rem;
+
+    a {
+      display: inline-block;
     }
-
-    &__social{
-
+    a:not(:last-child) {
+      margin-right: 1rem;
     }
+  }
 
-    &__links{
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9375rem;
 
-        &.col1{
-
-        }
-        &.col2{
-
-        }
-
+    &.col1 {
     }
-
-    &__cta{
-
-        a.button{
-
-        }
-
+    &.col2 {
+      margin-bottom: 1.875rem;
     }
-
-    &__copyright{
-
+    a{
+    line-height: 2.25;
     }
+  }
+
+  &__cta {
+    a.button {
+      margin-bottom: 1.875rem;
+    }
+  }
+
+  &__copyright {
+  }
 }
