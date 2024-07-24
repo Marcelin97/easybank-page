@@ -17,3 +17,8 @@
 
 ## Thanks for reading 🙇
 > 💬 ask me about anything, i am happy to help.
+
+# Launch the application
+
+> install live sass compiler 
+> and click the btn GO Live in the bottom of VS code
